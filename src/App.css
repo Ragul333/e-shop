@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(108, 111, 111, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  border: 1px solid wheat;
+  padding: 0.5rem;
+}
+
+.cart {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+  margin-right: 2rem;
+}
+
+.back {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.product-image {
+  height: 10rem;
+  width: 100%;
+}
+
+.product-detail-image {
+  width: 20rem;
+}
+
+a,a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.cart-btn {
+  min-width: 100%;
+}
+
+.cart-card {
+  border: 1px solid rgb(20, 19, 19, 0.4);
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.cart-img {
+  height: 3rem;
+  width: 100%;
+}
+
+.quantity-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qty {
+  padding: 0 3rem;
+}
+
+.cart-summary {
+  border: 1px solid rgb(20, 19, 19, 0.4);
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+}
+
+.cart-summary-list {
+  list-style: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.order-text-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-img {
+  height: 5rem;
+}
+
+.order-qty {
+  display: flex;
+  height: 5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.empty-cart-cont{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 70vh;
+}
+.empty-cart-image{
+  height: 20rem;
 }
 
-.App-link {
-  color: #61dafb;
+.checkmark-animation {
+  animation: scaleUp 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.modal-success{
+  padding: 5rem;
+  top: 50%;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
