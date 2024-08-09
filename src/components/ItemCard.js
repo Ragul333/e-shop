@@ -8,7 +8,7 @@ const ItemCard = ({ item, categoryId }) => {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
     const currItem = cartItems.find(el => el.id === item.id)
-    
+
     const handleAddItem = (item) => {
         dispatch(addItem(item));
     }
@@ -25,7 +25,7 @@ const ItemCard = ({ item, categoryId }) => {
             </div>
             <div className="card-body">
                 <Link to={`/category/${categoryId}/detail/${item.id}`}>
-                    <h5 className="card-title">{item.name}</h5>
+                    <h5 className="card-title truncate-text">{item.name}</h5>
                     <h5 className='text-bold text-secondary'>₹ {item.price}</h5>
                 </Link>
                 {

@@ -16,6 +16,7 @@ const ProductDetail = () => {
     const currProduct = category.items.find(el => el.id == productId)
     const currProductQty = cartItems.find(el => el.id == productId)
 
+    
     const handleAddItem = (item) => {
         dispatch(addItem(item));
     }
